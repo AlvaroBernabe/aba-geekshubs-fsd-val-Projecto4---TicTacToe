@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(238, 0, 255)
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+}
+h1 {
+    font-weight: 700;
+    color: red;   
+}
+#fotowin {
+    width: 80%;
+    height: 90%;
+}
+
+.span {
+    font-size: small;
+}
