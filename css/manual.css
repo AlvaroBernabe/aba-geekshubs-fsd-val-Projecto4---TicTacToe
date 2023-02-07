@@ -3,10 +3,33 @@ body{
     background-repeat: no-repeat;
     border: 0px;
     padding: 0px;
-    z-index: 0;
 }
 
 p {
-    z-index: 2;
     background-color: rgb(243, 194, 148) ;
+    color: rgb(201, 64, 0);
 }
+
+h1 {
+    color: rgb(119, 38, 6);
+}
+
+h2 {
+    color: rgb(119, 38, 6);
+}
+
+.btn {
+    background-color: rgb(202, 122, 68);
+    align-content: center;
+    justify-content: center;
+    height: 2.8em;
+    width: 12em;
+    color: rgb(39, 0, 112);
+    border-radius: 8%;
+    border-color: rgb(196, 0, 186);
+}
+.btn:hover {
+    background-color: rgb(202, 82, 2);
+    cursor: pointer;
+}
+
