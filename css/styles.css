@@ -1,0 +1,24 @@
+body{
+    background-image: url(../img/Background-main.jpg);
+    background-repeat: no-repeat;
+    border: 0px;
+    padding: 0px;
+
+}
+
+
+
+.btn {
+    font-size: 20px;
+    position: relative;
+    top: 14em;
+    width:15em;   
+    height: 2em;
+    color: rgb(124, 0, 93);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.row {
+    padding: 14px;
+}

@@ -1,0 +1,12 @@
+body{
+    background-image: url(../img/Background-main.jpg);
+    background-repeat: no-repeat;
+    border: 0px;
+    padding: 0px;
+    z-index: 0;
+}
+
+p {
+    z-index: 2;
+    background-color: rgb(243, 194, 148) ;
+}
