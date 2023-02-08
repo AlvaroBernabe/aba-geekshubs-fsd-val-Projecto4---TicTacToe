@@ -9,7 +9,7 @@ body{
 .btn {
     font-size: 20px;
     position: relative;
-    top: 14em;
+    top: 7em;
     width:15em;   
     height: 2em;
     color: rgb(124, 0, 93);
@@ -23,5 +23,8 @@ body{
 
 h1 {
     color: rgb(201, 64, 0);
+    text-align: center;
+}
+.container {
     text-align: center;
 }
