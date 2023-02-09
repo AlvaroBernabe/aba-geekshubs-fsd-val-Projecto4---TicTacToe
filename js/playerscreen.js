@@ -1,0 +1,1 @@
+const botonJugar = document.getElementById("botonJugar").addEventListener("click");

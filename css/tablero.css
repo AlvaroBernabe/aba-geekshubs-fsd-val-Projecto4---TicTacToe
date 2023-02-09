@@ -11,9 +11,13 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     background-color: rgb(113, 86, 43);
-    position: relative;
-    top: 10em;
+    position: fixed;
+    top: 12em;
+    right: 8em;
+    z-index: 2;
 }
+
+
 
 .cellDesign {
     height: 7em;
@@ -26,6 +30,40 @@ body {
     cursor: pointer;
 }
 
+.jugadores {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    text-align: center;
+    color: white;
+    background-color: red;
+    z-index: 1;
+}
+
+
+.jugador1-stats,
+.jugador2-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.jugador1-nombre {
+    color: blue;
+}
+
+.jugador2-nombre {
+    color: blueviolet;
+}
+
 /* .cellDesign:hover {
     scale: 1.05;    
 } */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9em;
+    width: 20em;
+}
