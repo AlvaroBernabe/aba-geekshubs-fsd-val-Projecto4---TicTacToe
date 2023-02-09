@@ -1,0 +1,10 @@
+body {
+    background-image: url(../img/Background-main.jpg);
+    border: 0px;
+    padding: 0px;
+}
+
+#columna {
+    position: relative;
+    top: 13em;
+}
