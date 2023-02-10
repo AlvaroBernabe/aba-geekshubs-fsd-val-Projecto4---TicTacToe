@@ -50,7 +50,7 @@ inputs.map(
         elemento.addEventListener("input", ()=>{
             for(let jugador in players){
                 if(elemento.name == jugador){
-                    players[jugador] = elemento.ariaValueMax;
+                    players[jugador] = elemento.value;
                 }
             }
         })
@@ -63,6 +63,6 @@ const cambiaPantalla = () => {
     }
     sessionStorage.setItem("playersInfo", JSON.stringify(players));
     setTimeout(()=>{
-        window.open("../pages/tablero.html");
+        window.open("../pages/tablero.html","_self");
     },500);
 }
