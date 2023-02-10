@@ -9,61 +9,44 @@ body {
 
 .tablero_container {
     display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 15em;
+    right: 2.2em;
     grid-template-columns: repeat(3, auto);
     background-color: rgb(113, 86, 43);
-    position: fixed;
-    top: 12em;
-    right: 8em;
-    z-index: 2;
+    height: 35vh;
+    width: 45vw;
 }
 
-
-
 .cellDesign {
-    height: 7em;
-    width: 7em;
-    display: flex;
+    height: 6vh;
+    width: 6vw;
     justify-content: center;
     align-items: center;
     background-color: rgb(235, 140, 156);
     margin: 1em;
     cursor: pointer;
 }
+/* .cellDesign:hover {
+    scale: 1.05;    
+} */
 
 .jugadores {
+    padding: 5px;
     display: flex;
     flex-direction: column;
     font-size: 1.1em;
     text-align: center;
     color: white;
     background-color: red;
-    z-index: 1;
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+    top: 1em;
+
 }
 
 
-.jugador1-stats,
-.jugador2-stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 50%;
-}
 
-.jugador1-nombre {
-    color: blue;
-}
-
-.jugador2-nombre {
-    color: blueviolet;
-}
-
-/* .cellDesign:hover {
-    scale: 1.05;    
-} */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 9em;
-    width: 20em;
-}
