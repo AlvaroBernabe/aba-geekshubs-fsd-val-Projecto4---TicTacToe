@@ -40,12 +40,20 @@ body {
     font-size: 1.1em;
     text-align: center;
     color: white;
-    background-color: red;
+    background-color: rgb(192, 61, 61);
     position: relative;
     height: 20vh;
-    width: 20vw;
+    width: 45vw;
     top: 1em;
+    align-items: center;
+    justify-content: center;
+}
 
+.jugador-stats {
+    position: relative;
+    top: 7em;
+    align-items: center;
+    justify-content: center;
 }
 
 
