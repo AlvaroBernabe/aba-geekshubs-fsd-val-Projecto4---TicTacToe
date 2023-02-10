@@ -20,7 +20,7 @@
 
 
 
-// windows.open("../pages/tablero.html","_selft");
+
 
 
 
@@ -39,9 +39,18 @@
 
 
 
-let nameP1Placeholder = document.querySelector(".player1-name-placeholder");
-let nameP2Placeholder = document.querySelector(".player2-name-placeholder");
+// let nameP1Placeholder = document.querySelector(".player1-name-placeholder");
+// let nameP2Placeholder = document.querySelector(".player2-name-placeholder");
 
 
-let player1 = sessionStorage.getItem('player1-name');
-let player2 = sessionStorage.getItem('player2-name');
+// let player1 = sessionStorage.getItem('player1-name');
+// let player2 = sessionStorage.getItem('player2-name');
+// windows.open("../pages/tablero.html","_selft");
+
+let player1 = document.getElementById("player1");
+let player2 = document.getElementById("player2");
+
+let datosSesion = JSON.parse(sessionStorage.getItem("playersInfo"));
+
+player1.innetHTML = `${datosSesion.player1}`;
+player2.innetHTML = `${datosSesion.player2}`;

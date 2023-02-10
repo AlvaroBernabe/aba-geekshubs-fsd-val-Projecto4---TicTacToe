@@ -20,18 +20,49 @@
 // }
 // }
 
+
+
+// let player1Input = document.querySelector("player1name");
+// let player2Input = document.querySelector("player2name");
+
+// let startBtn = document.getElementById("botonJugar");
+
+// startBtn.addEventListener("click", storagePlayersNames);
+
+// const storagePlayersNames = () => {
+//     let player1Name = player1Input.value;
+//     let player2Name = player2Input.value;
+//     sessionStorage.setItem('player1-name',player1Name);
+//     sessionStorage.setItem('player2-name',player2Name);
+// }
 // windows.open("../pages/tablero.html","_selft");
 
-let player1Input = document.querySelector("player1name");
-let player2Input = document.querySelector("player2name");
+let players = {
+    player1 : "",
+    player2 : ""
+}
 
-let startBtn = document.getElementById("botonJugar");
+let inputs = Array.from(document.getElementsByClassName("namePlayer"));
 
-startBtn.addEventListener("click", storagePlayersNames);
 
-const storagePlayersNames = () => {
-    let player1Name = player1Input.value;
-    let player2Name = player2Input.value;
-    sessionStorage.setItem('player1-name',player1Name);
-    sessionStorage.setItem('player2-name',player2Name);
+inputs.map(
+    elemento => {
+        elemento.addEventListener("input", ()=>{
+            for(let jugador in players){
+                if(elemento.name == jugador){
+                    players[jugador] = elemento.ariaValueMax;
+                }
+            }
+        })
+    }
+)
+
+const cambiaPantalla = () => {
+    if( (players.player1 === '') || (players.player2 === '') ) {
+        return;
+    }
+    sessionStorage.setItem("playersInfo", JSON.stringify(players));
+    setTimeout(()=>{
+        window.open("../pages/tablero.html");
+    },500);
 }
