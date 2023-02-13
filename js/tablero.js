@@ -14,10 +14,6 @@ let fichaP1 = 3;
 let fichaP2 = 3;
 let miTablero = ["","","","","","","","",""];
 
-
-
-
-
 let victoria = [
     [0, 1, 2],
     [3, 4, 5],
@@ -29,7 +25,6 @@ let victoria = [
     [2, 4, 6],
 ];
 
-
 tablero.map(
     (celda) => {
         celda.addEventListener('click', ()=> {
@@ -40,7 +35,7 @@ tablero.map(
                 ganar=() =>  {
                     switch (true) {
                         case 'ganador1':
-                            if ((celda[0[1]] = "X") &&(celda[0[2]] = "X") && (celda[0[3]] = "X")) {
+                            if ((celda[0][1] = "X") &&(celda[0][2] = "X") && (celda[0][3] = "X")) {
                                 console.log ("Has ganado jugador 1")
                             }
                         case 'ganador2':
@@ -56,7 +51,18 @@ tablero.map(
                     }
                 }
                 turno = !turno;
+                } if ((celda.innerHTML != "") && (fichaP1 === 0 && fichaP2 ===0)) {
+                    if((turno) && (miTablero[celda.id ] === "X")) {
+                        celda.innerHTML = ""
+                        fichaP1++
+                        miTablero[celda.id] = "";
+                    } else if ((!turno) && (miTablero[celda.id] === "O")) {
+                        celda.innerHTML = ""
+                        fichaP2++
+                        miTablero[celda.id] = "";  
+                    }
+                }
             }
-            })
+        )
     }
 )

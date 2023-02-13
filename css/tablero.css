@@ -27,6 +27,7 @@ body {
     background-color: rgb(235, 140, 156);
     margin: 1em;
     cursor: pointer;
+    border: 1px;
 }
 
 #nombre_jugadores {
@@ -34,9 +35,9 @@ body {
 }
 
 
-/* .cellDesign:hover {
+.cellDesign:hover {
     scale: 1.05;    
-} */
+}
 
 /* .jugadores {
     padding: 5px;
