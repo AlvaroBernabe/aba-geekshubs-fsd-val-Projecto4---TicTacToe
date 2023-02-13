@@ -28,6 +28,12 @@ body {
     margin: 1em;
     cursor: pointer;
 }
+
+#nombre_jugadores {
+    align-items: center;
+}
+
+
 /* .cellDesign:hover {
     scale: 1.05;    
 } */

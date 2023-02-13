@@ -37,7 +37,7 @@ tablero.map(
                 celda.innerHTML = (turno) ? "X" : "O";
                 (turno) ? fichaP1-- : fichaP2--;
                 miTablero[celda.id] = (turno) ? "X" : "O";
-                victoria=() =>  {
+                ganar=() =>  {
                     switch (true) {
                         case 'ganador1':
                             if ((celda[0[1]] = "X") &&(celda[0[2]] = "X") && (celda[0[3]] = "X")) {

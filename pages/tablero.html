@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="../css/tablero.css">
 </head>
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid" id="nombre_jugadores">
+        <div class="row d-flex justify-content-center">
         <div class="col mb-3">
             <h1>Jugador 1:</h1><h2 id="Player1" class="nombre">Player 1</h2>
         </div>
         <div class="col mb-3">
             <h1>Jugador 2:</h1><h2 id="Player2" class="nombre">Player 2</h2>
-        </div>
+        </div></div>
+        <div class="row d-flex justify-content-center">
 <div class="contenedor_tablero">
+    <div class="col mb-3">
     <div class="tablero_container">
         <div class="cellDesign" id="0"></div>
         <div class="cellDesign" id="1"></div>
@@ -26,7 +29,7 @@
         <div class="cellDesign" id="6"></div>
         <div class="cellDesign" id="7"></div>
         <div class="cellDesign" id="8"></div>
-    </div>
+    </div></div></div>
 </div>
 </div>
     <script src="../js/tablero.js"></script>
