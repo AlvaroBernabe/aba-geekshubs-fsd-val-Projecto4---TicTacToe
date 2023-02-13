@@ -39,9 +39,9 @@ body {
     flex-direction: column;
     font-size: 1.1em;
     text-align: center;
-    color: white;
-    background-color: rgb(192, 61, 61);
-    position: relative;
+    color: rgb(168, 5, 5);
+    
+    position: relative; 
     height: 20vh;
     width: 45vw;
     top: 1em;

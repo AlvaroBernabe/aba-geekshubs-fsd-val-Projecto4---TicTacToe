@@ -1,10 +1,9 @@
 let players = {
-    player1 : "",
-    player2 : ""
+    gamer1 : "",
+    gamer2 : ""
 }
 
-let inputs = Array.from(document.getElementsByClassName("namePlayer"));
-
+let inputs = Array.from(document.getElementsByClassName("nombrejugador"));
 
 inputs.map(
     elemento => {
@@ -19,10 +18,12 @@ inputs.map(
 )
 
 const cambiaPantalla = () => {
-    if( (players.player1 === '') || (players.player2 === '') ) {
-        return;
+    let jugador1 = document.getElementById("Player1").value;
+    let jugador2 = document.getElementById("Player2").value;
+    if (jugador1 !="" && jugador2 !="")  {
+        sessionStorage.setItem("name1",jugador1);
+        sessionStorage.setItem("name2",jugador2);
     }
-    sessionStorage.setItem("playersInfo", JSON.stringify(players));
     setTimeout(()=>{
         window.open("../pages/tablero.html","_self");
     },500);

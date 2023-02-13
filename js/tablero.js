@@ -1,10 +1,11 @@
-let player1 = document.getElementById("player1");
-let player2 = document.getElementById("player2");
 
-let datosSesion = JSON.parse(sessionStorage.getItem("playersInfo"));
 
-player1.innetHTML = `${datosSesion.player1}`;
-player2.innetHTML = `${datosSesion.player2}`;
+const nombrejugador = () => {
+    document.getElementById("Player1").innerHTML = sessionStorage.getItem("name1")
+    document.getElementById("Player2").innerHTML = sessionStorage.getItem("name2")
+}
+
+nombrejugador ();
 
 
 let tablero = Array.from(document.getElementsByClassName("cellDesign"));

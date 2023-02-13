@@ -4,7 +4,15 @@ body {
     padding: 0px;
 }
 
-#columna {
+.container {
     position: relative;
     top: 13em;
+    padding: 0px;
+}
+#columna {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    right:4px;
 }

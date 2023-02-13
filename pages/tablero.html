@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/tablero.css">
 </head>
 <body>
-    <div class="jugadores">
-        <div class="jugador-stats">
-            <div class="jugador1-name" id="player1tx" style="font-size: xx-large;">Jugador1 <span  class="player1"></span> </div>
-            <p class="mb-lg-0 fs-5">PLAYER 1:<span class="player1-name-placeholder"></span></p>
-            <div class="jugador2-name" id="player2tx" style="font-size: xx-large;">jugador2 <span  class="player2"></span></div>
-            <div class="nombrejugador1"></div>
+    <div class="container-fluid">
+        <div class="col mb-3">
+            <h1>Jugador 1:</h1><h2 id="Player1" class="nombre">Player 1</h2>
+        </div>
+        <div class="col mb-3">
+            <h1>Jugador 2:</h1><h2 id="Player2" class="nombre">Player 2</h2>
         </div>
 <div class="contenedor_tablero">
     <div class="tablero_container">
@@ -30,6 +30,5 @@
 </div>
 </div>
     <script src="../js/tablero.js"></script>
-    <script src="../js/playerscreen.js"></script>
 </body>
 </html>

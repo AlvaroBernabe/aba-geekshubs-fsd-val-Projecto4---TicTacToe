@@ -18,12 +18,14 @@
 <body>
     <div class="container-fluid d-flex">
         <div class="container">
-            <div class="row d-flex justify-content-center" id="columna">
+            <div class="row d-flex justify-content-center">
                 <div class="col-7 p-3 d-flex flex-column border-3 border border-white justify-content-center">
-                    <div class="row d-flex justify-content-center text-center">
+                    <div class="row d-flex justify-content-center text-center" id="columna">
                         <div class="col">
-                            <input name="player1" class="namePlayer" type="text" placeholder="Nombre jugador 1" maxlength="20"/>
-                            <input name="player2" class="namePlayer" type="text" placeholder="Nombre jugador 2" maxlength="20"/>
+                            <input id="Player1" class="nombrejugador" type="text" placeholder="Nombre jugador 1" maxlength="20"/>
+                        </div>
+                        <div class="col">
+                            <input id="Player2" class="nombrejugador" type="text" placeholder="Nombre jugador 2" maxlength="20"/>
                         </div>
                         <div id="botonjugar" class="btn btn-success" onclick="cambiaPantalla()">Comenzar la partida</div>
 
@@ -34,6 +36,5 @@
         </div>
     </div>
     <script src="../js/playerscreen.js"></script>
-    <script src="../js/tablero.js"></script>
 </body>
 </html>
