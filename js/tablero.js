@@ -1,5 +1,5 @@
 
-
+//sessionStorage
 const nombrejugador = () => {
     document.getElementById("Player1").innerHTML = sessionStorage.getItem("name1")
     document.getElementById("Player2").innerHTML = sessionStorage.getItem("name2")
@@ -32,37 +32,61 @@ tablero.map(
                 celda.innerHTML = (turno) ? "X" : "O";
                 (turno) ? fichaP1-- : fichaP2--;
                 miTablero[celda.id] = (turno) ? "X" : "O";
-                ganar=() =>  {
-                    switch (true) {
-                        case 'ganador1':
-                            if ((celda[0][1] = "X") &&(celda[0][2] = "X") && (celda[0][3] = "X")) {
-                                console.log ("Has ganado jugador 1")
-                            }
-                        case 'ganador2':
-                            if ((celda[3] = "X") &&(celda[4] = "X") && (celda[5] = "X")) {
-                                console.log ("Has ganado jugador 1")
-                            }
-                        case 'ganador3':
-                            if ((celda[6] = "O") &&(celda[7] = "O") && (celda[8] = "O")) {
-                                console.log ("Has ganado jugador 2")
-                            }
-                        default:
-                            console.log("nadie gana")
-                    }
-                }
+                ganar();
                 turno = !turno;
+                //Recoger la ficha y volver a ponerla cuando las 3 están ya puestas
                 } if ((celda.innerHTML != "") && (fichaP1 === 0 && fichaP2 ===0)) {
-                    if((turno) && (miTablero[celda.id ] === "X")) {
-                        celda.innerHTML = ""
-                        fichaP1++
+                    if((turno) && (miTablero[celda.id] === "X")) {
+                        celda.innerHTML = "";
+                        fichaP1++ ;
                         miTablero[celda.id] = "";
                     } else if ((!turno) && (miTablero[celda.id] === "O")) {
-                        celda.innerHTML = ""
-                        fichaP2++
-                        miTablero[celda.id] = "";  
+                        celda.innerHTML = "";
+                        fichaP2++ ;
+                        miTablero[celda.id] = "";
                     }
                 }
             }
         )
     }
 )
+
+
+
+
+
+
+
+
+
+
+
+const result = [];
+
+
+let ganar = (ganador) => {
+    for (let i = 0; i < victoria.length; i++) {
+        let win = victoria[i]
+        let win1 = tablero[win[0]].textContent
+        let win2 = tablero[win[1]].textContent
+        let win3 = tablero[win[2]].textContent
+        if (win1 === "" || win2 === "" || win3 === "") {
+            continue;
+        }
+        if (win1 === win2 && win2 === win3) {
+            return result.push(ganador), storageWinner()
+        }
+    }
+};
+
+
+
+
+const storageWinner = () => {
+    if (result[0] === true) {
+        sessionStorage.setItem('winner', JSON.stringify(player1.name));
+    } else {
+        sessionStorage.setItem('winner', JSON.stringify(player2.name));
+    }
+    window.location = "../pages/victoria.html"
+};
