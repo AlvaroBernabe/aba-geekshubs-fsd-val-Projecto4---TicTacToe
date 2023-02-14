@@ -61,7 +61,7 @@ tablero.map(
 
 
 
-const result = [];
+let result = [];
 
 
 let ganar = (ganador) => {
@@ -82,11 +82,12 @@ let ganar = (ganador) => {
 
 
 
-const storageWinner = () => {
+let storageWinner = () => {
     if (result[0] === true) {
-        sessionStorage.setItem('winner', JSON.stringify(player1.name));
+        sessionStorage.setItem('winner', sessionStorage.getItem("name1")); 
     } else {
-        sessionStorage.setItem('winner', JSON.stringify(player2.name));
+        sessionStorage.setItem('winner', sessionStorage.getItem("name2"));
     }
     window.location = "../pages/victoria.html"
+    console.log(`ha ganado el jugador ${'winner'}`)
 };

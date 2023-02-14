@@ -1,4 +1,8 @@
-const displayWinnerName = document.getElementById("winner-name");
-let winnerName = sessionStorage.getItem("winner");
-displayWinnerName.innerHTML = winnerName;
-console.log(winnerName)
+let jugadores = sessionStorage.getItem("winner")
+
+// sessionStorage.setItem("jugador",JSON.stringify(jugadores))
+
+
+console.log(JSON.stringify(jugadores))
+
+let muestrawin = document.getElementById("jugadores");
