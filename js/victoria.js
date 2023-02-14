@@ -1,8 +1,10 @@
 let jugadores = sessionStorage.getItem("winner")
 
-// sessionStorage.setItem("jugador",JSON.stringify(jugadores))
+// let muestrawin = document.getElementById("jugadores");
 
 
-console.log(JSON.stringify(jugadores))
+const nombreganador = () => {
+    document.getElementById("ganador").innerHTML = (JSON.stringify(jugadores))
+}
 
-let muestrawin = document.getElementById("jugadores");
+nombreganador ();
