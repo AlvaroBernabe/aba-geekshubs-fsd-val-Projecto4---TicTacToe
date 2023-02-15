@@ -3,7 +3,6 @@ body{
     background-repeat: no-repeat;
     border: 0px;
     padding: 0px;
-
 }
 
 .btn {
@@ -15,16 +14,30 @@ body{
     color: rgb(124, 0, 93);
     text-align: center;
     justify-content: space-between;
-}
-
-.row {
-    padding: 14px;
+    padding: 0;
+    position: sticky;
 }
 
 h1 {
-    color: rgb(201, 64, 0);
+    color: rgb(184, 3, 124);
     text-align: center;
+    padding: 10px;
+    font-family:Impact,'Arial Narrow Bold', sans-serif ;
 }
+
+.row {
+    padding: 9px;
+}
+
 .container {
     text-align: center;
+}
+
+.foto {
+    height: 14em;
+    width: 14em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.6em;
 }

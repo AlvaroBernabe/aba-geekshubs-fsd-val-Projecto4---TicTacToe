@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-    position: relative;
     top: 13em;
     padding: 0px;
 }
@@ -15,4 +14,58 @@ body {
     text-align: center;
     position: relative;
     right:4px;
+}
+
+#Player1 {
+    color: rgb(191, 10, 191);
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#Player2 {
+    color: rgb(0, 21, 138);
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#foto1 {
+    max-width: 5em;
+}
+
+.jugador1titulo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2em;
+}
+
+#texto1 {
+    display:grid;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#foto2 {
+    height: 6em;
+    justify-content: left;
+}
+
+.jugador2titulo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+#texto2 {
+    display:grid;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
+.medio {
+    border: 20px;
+    border-color: blue; 
+    justify-content: center;
 }

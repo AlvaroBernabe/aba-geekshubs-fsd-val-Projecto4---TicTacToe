@@ -1,24 +1,3 @@
-// let players = {
-//     gamer1 : "",
-//     gamer2 : ""
-// }
-
-// let inputs = Array.from(document.getElementsByClassName("nombrejugador"));
-
-// inputs.map(
-//     elemento => {
-//         elemento.addEventListener("input", ()=>{
-//             for(let jugador in players){
-//                 if(elemento.name == jugador){
-//                     players[jugador] = elemento.value;
-//                 }
-//             }
-//         })
-//     }
-// )
-
-
-
     //Al pulsar el botón de comenzar la partida cambia al HTML del tablero
 const cambiaPantalla = () => {
     let jugador1 = document.getElementById("Player1").value;

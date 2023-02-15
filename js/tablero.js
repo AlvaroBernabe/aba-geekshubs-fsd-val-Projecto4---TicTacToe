@@ -76,7 +76,6 @@ let ganar = (debate) => {
         }
         if (win1 === win2 && win2 === win3) {
             result.push(win1).innerHTML
-
             // result.push("turno")
             console.log(result)
             return (debate, storageWinner())
