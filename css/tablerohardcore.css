@@ -4,9 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/fondotablero.png);
-    background-repeat: no-repeat;
-    background-size:auto;
+
 }
 
 .tablero_container {
@@ -19,6 +17,9 @@ body {
     font-size: 5vw;
     color:rgb(2, 226, 196);
 }
+#color {
+    display: none;
+}
 
 .cellDesign {
     box-sizing: border-box;
@@ -29,7 +30,25 @@ body {
     border: #2e1568 .1vw solid;
     cursor: pointer;
     background-color: rgba(18, 108, 163, 0.245);
-    animation: cellDesign 0.5s ease 0s infinite normal forwards;
+    animation: cellDesign 0.7s ease 0s infinite normal forwards; !important
+    animation-name: scale-down-hor-center;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: none;
+}
+
+@media (max-width: 600px) {
+    .tablero_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: 2.2em;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 30vw 30vw 30vw;
+        font-size: 10vw;
+        color:rgb(2, 226, 196);
+    }
 }
 
 @keyframes cellDesign {
@@ -44,6 +63,33 @@ body {
 	}
 }
 
+
+/* .cellDesign {
+    width: 100px;
+    height: 100px;
+    animation: scale-down-hor-center 0.8s linear 0s infinite alternate-reverse none;
+		animation-name: scale-down-hor-center;
+		animation-duration: 0.8s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		animation-fill-mode: none;
+} */
+
+/* @keyframes cellDesign {
+			
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(.3);
+    }
+} */
+
+
+
+
 #nombrejugadores {
     align-items: center;
     justify-content: space-around;
@@ -52,6 +98,41 @@ body {
 
 .cellDesign:hover {
     scale: 1.05;    
+}
+
+#numero0 {
+    color: red;
+}
+#numero1 {
+    color: rgb(166, 181, 0);
+
+}
+#numero2 {
+    color: rgb(0, 118, 14);
+
+}
+#numero3 {
+    color: rgb(0, 21, 255);
+
+}
+#numero4 {
+    color: rgb(52, 0, 47);
+
+}
+#numero5 {
+    color: rgb(5, 2, 2);
+
+}
+#numero6 {
+    color: rgb(123, 161, 89);
+
+}
+#numero7 {
+    color: rgb(190, 78, 3);
+}
+#numero8 {
+    color: rgb(69, 19, 140);
+
 }
 
 /* Nombres de los jugadores y títulos    */

@@ -20,6 +20,9 @@
         [2, 4, 6],
     ];
     
+
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
         //Esto es la parte que contiene toda la partida
     tablero.map(
         (celda) => {
@@ -31,6 +34,10 @@
                     miTablero[celda.id] = (turno) ? "X" : "O";
                     ganar();
                     turno = !turno;
+                                    // Cambiar de color fondo al hacer click
+                const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                document.body.style.backgroundColor = "#" + randomColor;
+                color.innerHTML = "#" + randomColor;
                     //Recoger la ficha y volver a ponerla cuando las 3 están ya puestas
                     } if ((celda.innerHTML != "") && (fichaP1 === 0 && fichaP2 ===0)) {
                         if((turno) && (miTablero[celda.id] === "X")) {
@@ -73,5 +80,5 @@
         } else {
             sessionStorage.setItem('winner', sessionStorage.getItem("name2"));
         }
-        window.location = "../pages/victoriahardcore.html"
+        window.location = "../pages/victoria.html"
     };
