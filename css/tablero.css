@@ -11,25 +11,37 @@ body {
 
 .tablero_container {
     display: grid;
-    position: relative;
     justify-content: center;
     align-items: center;
     right: 2.2em;
-    grid-template-columns: repeat(3, auto);
-    background-color: rgb(113, 86, 43);
-    height: 35vh;
-    width: 45vw;
+    grid-template-columns: 11.5vw 11.5vw 11.5vw;
+    grid-template-rows: 11.5vw 11.5vw 11.5vw;
+    font-size: 5vw;
+    color:rgb(2, 226, 196);
 }
 
 .cellDesign {
-    height: 6vh;
-    width: 6vw;
+    box-sizing: border-box;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(235, 140, 156);
-    margin: 1em;
+    height: 100%;
+    border: #2e1568 .1vw solid;
     cursor: pointer;
-    border: 1px;
+    background-color: rgba(18, 108, 163, 0.245);
+    animation: cellDesign 4s ease 0s normal forwards;
+}
+
+@keyframes cellDesign {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
 }
 
 #nombrejugadores {

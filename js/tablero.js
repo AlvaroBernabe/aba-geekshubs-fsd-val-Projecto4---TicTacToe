@@ -9,7 +9,6 @@ let fichaP1 = 3;
 let fichaP2 = 3;
 let tablero = Array.from(document.getElementsByClassName("cellDesign"));
 let miTablero = ["","","","","","","","",""];
-let jugador1 = "X"
 let victoria = [
     [0, 1, 2],
     [3, 4, 5],
@@ -27,7 +26,7 @@ tablero.map(
         celda.addEventListener('click', ()=> {
             //Cambiar de turno cuando uno pone ficha
             if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
-                celda.innerHTML = (turno) ? "X" : "O";
+                celda.innerHTML = (turno) ?  "X" : "O";
                 (turno) ? fichaP1-- : fichaP2--;
                 miTablero[celda.id] = (turno) ? "X" : "O";
                 ganar();

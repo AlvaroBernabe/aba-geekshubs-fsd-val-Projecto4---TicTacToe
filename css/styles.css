@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/Background-main.jpg);
+    background-image: url(../img/fondotablero.png);
     background-repeat: no-repeat;
     border: 0px;
     padding: 0px;
@@ -40,4 +40,35 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 0.6em;
+    animation: foto 6s ease 0s infinite normal forwards;
+}
+
+@keyframes foto {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }

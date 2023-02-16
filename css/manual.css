@@ -1,21 +1,21 @@
 body{
-    background-image: url(../img/Background-main.jpg);
+    background-image: url(../img/fondotablero.png);
     background-repeat: no-repeat;
     border: 0px;
     padding: 0px;
 }
 
 p {
-    background-color: rgb(243, 194, 148) ;
-    color: rgb(201, 64, 0);
+
+    color: rgb(0, 134, 201);
 }
 
 h1 {
-    color: rgb(119, 38, 6);
+    color: rgb(5, 0, 98);
 }
 
 h2 {
-    color: rgb(119, 38, 6);
+    color: rgb(6, 12, 119);
 }
 
 .btn {
