@@ -20,12 +20,19 @@ body {
     color: rgb(191, 10, 191);
     font-family:Impact,'Arial Narrow Bold', sans-serif;
     text-align: center;
+    padding: 0.2em;
+
 }
 
 #Player2 {
     color: rgb(0, 21, 138);
     font-family:Impact,'Arial Narrow Bold', sans-serif;
     text-align: center;
+    padding: 0.2em;
+}
+
+#botonjugar {
+    border-top: 20px;
 }
 
 #foto1 {
@@ -43,6 +50,7 @@ body {
 #texto1 {
     display:grid;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: xx-large;
 }
 
 #foto2 {
@@ -59,10 +67,9 @@ body {
 
 #texto2 {
     display:grid;
-    justify-content: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: xx-large;
 }
-
 
 .medio {
     border: 20px;
