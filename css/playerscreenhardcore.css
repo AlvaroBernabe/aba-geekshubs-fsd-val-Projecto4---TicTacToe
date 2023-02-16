@@ -1,0 +1,155 @@
+body {
+    background-image: url(../img/fondotablero.png);
+    border: 0px;
+    padding: 0px;
+}
+
+.container {
+    top: 13em;
+    padding: 0px;
+}
+#columna {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    right:4px;
+}
+
+#Player1 {
+    color: rgb(191, 10, 191);
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 0.2em;
+    -webkit-animation: Player1 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate both;
+    animation: Player1 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate both;
+
+}
+
+ @-webkit-keyframes Player1 {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateY(90deg);
+              transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateY(87deg);
+              transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+  }
+  @keyframes Player1 {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateY(90deg);
+              transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateY(87deg);
+              transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+  }
+  
+
+
+
+
+
+#Player2 {
+    color: rgb(0, 21, 138);
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 0.2em;
+    -webkit-animation: Player1 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate both;
+    animation: Player1 3s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate both;
+}
+
+@-webkit-keyframes Player2 {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateY(90deg);
+              transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateY(87deg);
+              transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+  }
+  @keyframes Player2 {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateY(90deg);
+              transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateY(87deg);
+              transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+  }
+
+#botonjugar {
+    border-top: 20px;
+}
+
+#foto1 {
+    max-width: 5em;
+}
+
+.jugador1titulo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2em;
+}
+
+#texto1 {
+    display:grid;
+    font-size: xx-large;
+    color: rgb(191, 10, 191);
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+}
+
+#foto2 {
+    height: 6em;
+    justify-content: left;
+}
+
+.jugador2titulo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+#texto2 {
+    display:grid;
+    font-size: xx-large;
+    color: rgb(0, 21, 138);
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+}
+
+.medio {
+    border: 20px;
+    border-color: blue; 
+    justify-content: center;
+}

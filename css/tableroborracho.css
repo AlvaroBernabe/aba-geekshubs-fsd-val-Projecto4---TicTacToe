@@ -29,18 +29,34 @@ body {
     border: #2e1568 .1vw solid;
     cursor: pointer;
     background-color: rgba(18, 108, 163, 0.245);
-    animation: cellDesign 4s ease 0s normal forwards;
+    animation: cellDesign 4s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal both;
 }
 
 @keyframes cellDesign {
-	0% {
-		opacity: 0;
-		transform: rotate(-540deg) scale(0);
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
 	}
 
-	100% {
-		opacity: 1;
-		transform: rotate(0) scale(1);
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
 	}
 }
 

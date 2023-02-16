@@ -29,18 +29,18 @@ body {
     border: #2e1568 .1vw solid;
     cursor: pointer;
     background-color: rgba(18, 108, 163, 0.245);
-    animation: cellDesign 4s ease 0s normal forwards;
+    animation: cellDesign 0.5s ease 0s infinite normal forwards;
 }
 
 @keyframes cellDesign {
 	0% {
-		opacity: 0;
-		transform: rotate(-540deg) scale(0);
+		transform: rotate(0);
+		transform-origin: right;
 	}
 
 	100% {
-		opacity: 1;
-		transform: rotate(0) scale(1);
+		transform: rotate(360deg);
+		transform-origin: right;
 	}
 }
 
