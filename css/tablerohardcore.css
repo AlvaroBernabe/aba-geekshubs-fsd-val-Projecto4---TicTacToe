@@ -30,12 +30,10 @@ body {
     border: #2e1568 .1vw solid;
     cursor: pointer;
     background-color: rgba(18, 108, 163, 0.245);
-    animation: cellDesign 0.7s ease 0s infinite normal forwards; !important
-    animation-name: scale-down-hor-center;
-    animation-duration: 0.8s;
+    animation: cellDesign 0.9s ease 0s infinite normal forwards; !important
+    animation-duration: 0.9s;
     animation-timing-function: linear;
     animation-direction: alternate-reverse;
-    animation-fill-mode: none;
 }
 
 @media (max-width: 600px) {
@@ -64,28 +62,6 @@ body {
 }
 
 
-/* .cellDesign {
-    width: 100px;
-    height: 100px;
-    animation: scale-down-hor-center 0.8s linear 0s infinite alternate-reverse none;
-		animation-name: scale-down-hor-center;
-		animation-duration: 0.8s;
-		animation-timing-function: linear;
-		animation-delay: 0s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate-reverse;
-		animation-fill-mode: none;
-} */
-
-/* @keyframes cellDesign {
-			
-    0% {
-        transform:scale(1);
-    }
-    100% {
-        transform:scale(.3);
-    }
-} */
 
 
 
@@ -120,7 +96,7 @@ body {
 
 }
 #numero5 {
-    color: rgb(5, 2, 2);
+    color: rgb(119, 137, 0);
 
 }
 #numero6 {

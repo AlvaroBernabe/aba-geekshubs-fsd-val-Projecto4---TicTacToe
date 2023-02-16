@@ -34,8 +34,9 @@
                     miTablero[celda.id] = (turno) ? "X" : "O";
                     ganar();
                     turno = !turno;
-                                    // Cambiar de color fondo al hacer click
-                const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                    play();
+                // Cambiar de color fondo al hacer click
+                let randomColor = Math.floor(Math.random()*16777215).toString(16);
                 document.body.style.backgroundColor = "#" + randomColor;
                 color.innerHTML = "#" + randomColor;
                     //Recoger la ficha y volver a ponerla cuando las 3 están ya puestas
@@ -82,3 +83,11 @@
         }
         window.location = "../pages/victoria.html"
     };
+    
+    //Función que inicia la música al hacer click
+    function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+        }
+    }

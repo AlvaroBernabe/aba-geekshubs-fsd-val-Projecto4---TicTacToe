@@ -31,6 +31,7 @@ tablero.map(
                 miTablero[celda.id] = (turno) ? "X" : "O";
                 ganar();
                 turno = !turno;
+                play();
                 //Recoger la ficha y volver a ponerla cuando las 3 están ya puestas
                 } if ((celda.innerHTML != "") && (fichaP1 === 0 && fichaP2 ===0)) {
                     if((turno) && (miTablero[celda.id] === "X")) {
@@ -75,3 +76,11 @@ let storageWinner = () => {
     }
     window.location = "../pages/victoria.html"
 };
+
+    //Función que inicia la música al hacer click
+function play() {
+    var audio = document.getElementById('audio');
+    if (audio.paused) {
+        audio.play();
+    }
+}
