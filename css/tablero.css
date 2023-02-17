@@ -16,7 +16,7 @@ body {
     right: 2.2em;
     grid-template-columns: 12vw 12vw 12vw;
     grid-template-rows: 12vw 12vw 12vw;
-    font-size: 5vw;
+    font-size: 7vw;
     color:rgb(2, 226, 196);
 }
 
@@ -29,9 +29,40 @@ body {
     border: #2e1568 .1vw solid;
     cursor: pointer;
     background-color: rgba(18, 108, 163, 0.245);
-    animation: cellDesign 4s ease 0s normal forwards;
+    animation: cellDesign 3.5s ease 0s normal forwards;
 }
-@media (max-width: 600px) {
+
+
+
+
+@media(max-width: 1050px) {
+    .tablero_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: 2.2em;
+        grid-template-columns: 17vw 17vw 17vw;
+        grid-template-rows: 17vw 17vw 17vw;
+        grid-template-columns: 17vh, 17vh, 17vh;
+        grid-template-rows: 17vh 17vh 17vh;
+        font-size: 7vw;
+        color:rgb(2, 226, 196);
+    }
+}
+@media (max-width: 700px) {
+    .tablero_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        right: 2.2em;
+        grid-template-columns: 25vw 25vw 25vw;
+        grid-template-rows: 25vw 25vw 25vw;
+        font-size: 7vw;
+        color:rgb(2, 226, 196);
+    }
+}
+
+@media (max-width: 560px) {
     .tablero_container {
         display: grid;
         justify-content: center;
@@ -39,10 +70,12 @@ body {
         right: 2.2em;
         grid-template-columns: 30vw 30vw 30vw;
         grid-template-rows: 30vw 30vw 30vw;
-        font-size: 7vw;
-        color:rgb(2, 226, 196);
+        font-size: 8vw;
+        color:rgb(0, 175, 152);
     }
 }
+
+
 
 @keyframes cellDesign {
 	0% {
@@ -58,9 +91,10 @@ body {
 
 #nombrejugadores {
     width: 100%;
-
     justify-content: right;
-    
+    justify-content:space-between;
+    position: relative;
+    display: flex;  
 }
 
 
@@ -80,7 +114,7 @@ body {
     font-family:Impact,'Arial Narrow Bold', sans-serif;
     animation: Player1 3s linear 0s  normal forwards;
 }
-@keyframes Player1 {
+/* @keyframes Player1 {
 	0% {
 		opacity: 0;
 		transform: translateX(-250px);
@@ -90,7 +124,7 @@ body {
 		opacity: 1;
 		transform: translateX(0);
 	}
-}
+} */
 
 /* #gamer2 {
     align-items: center;
@@ -108,7 +142,7 @@ body {
     animation: Player2 3s linear 0s normal forwards;
 }
 
-@keyframes Player2 {
+/* @keyframes Player2 {
 	0% {
 		opacity: 0;
 		transform: translateX(250px);
@@ -118,7 +152,7 @@ body {
 		opacity: 1;
 		transform: translateX(0);
 	}
-}
+} */
 
     /* Parte de los botones */
 

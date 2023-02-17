@@ -5,7 +5,9 @@
         if (jugador1 !="" && jugador2 !="")  {
             sessionStorage.setItem("name1",jugador1);
             sessionStorage.setItem("name2",jugador2);
-        }
+        } else {
+        return;
+    }
         setTimeout(()=>{
             window.open("../pages/tablerohardcore.html","_self");
         },500);
