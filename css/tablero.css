@@ -6,7 +6,7 @@ body {
     align-items: center;
     background-image: url(../img/fondotablero.png);
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:500%;
 }
 
 .tablero_container {
@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: #2e1568 .1vw solid;
+    border: #2e1568 0.15vw solid;
     cursor: pointer;
     background-color: rgba(18, 108, 163, 0.245);
     animation: cellDesign 3.5s ease 0s normal forwards;
@@ -41,10 +41,10 @@ body {
         justify-content: center;
         align-items: center;
         right: 2.2em;
-        grid-template-columns: 17vw 17vw 17vw;
-        grid-template-rows: 17vw 17vw 17vw;
-        grid-template-columns: 17vh, 17vh, 17vh;
-        grid-template-rows: 17vh 17vh 17vh;
+        grid-template-columns: 25vw 25vw 25vw;
+        grid-template-rows: 25vw 25vw 25vw;
+        grid-template-columns: 25vh 25vh 25vh;
+        grid-template-rows: 25vh 25vh 25vh;
         font-size: 7vw;
         color:rgb(2, 226, 196);
     }

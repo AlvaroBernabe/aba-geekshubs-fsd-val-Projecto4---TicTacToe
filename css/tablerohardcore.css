@@ -4,19 +4,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .tablero_container {
     display: grid;
     justify-content: center;
     align-items: center;
-    right: 2.2em;
     grid-template-columns: 11.5vw 11.5vw 11.5vw;
     grid-template-rows: 11.5vw 11.5vw 11.5vw;
     font-size: 5vw;
     color:rgb(2, 226, 196);
 }
+
 #color {
     display: none;
 }
@@ -40,8 +39,6 @@ body {
     .tablero_container {
         display: grid;
         justify-content: center;
-        align-items: center;
-        right: 2.2em;
         grid-template-columns: 30vw 30vw 30vw;
         grid-template-rows: 30vw 30vw 30vw;
         font-size: 10vw;
@@ -65,10 +62,12 @@ body {
 
 
 
-
 #nombrejugadores {
-    align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: right;
+    justify-content:space-between;
+    position: relative;
+    display: flex;  
 }
 
 

@@ -153,3 +153,7 @@ body {
     border-color: blue; 
     justify-content: center;
 }
+
+#columna {
+  padding: 4px;
+}

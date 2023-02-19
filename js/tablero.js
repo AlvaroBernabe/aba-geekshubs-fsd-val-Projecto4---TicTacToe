@@ -28,7 +28,7 @@ tablero.map(
             if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
                 celda.innerHTML = (turno) ?  "X" : "O";
                 (turno) ? fichaP1-- : fichaP2--;
-                miTablero[celda.id] = (turno) ? "X" : "O";
+                miTablero[celda.id] = (turno) ? "X" : "O";   
                 ganar();
                 turno = !turno;
                 play();
