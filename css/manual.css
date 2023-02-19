@@ -6,7 +6,6 @@ body{
 }
 
 p {
-
     color: rgb(0, 134, 201);
 }
 
@@ -28,6 +27,7 @@ h2 {
     border-radius: 8%;
     border-color: rgb(196, 0, 186);
 }
+
 .btn:hover {
     background-color: rgb(202, 82, 2);
     cursor: pointer;

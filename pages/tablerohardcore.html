@@ -26,31 +26,31 @@
                 <h1 id="Jugador2">Jugador 2: <span style="color: aqua;">O</span></h1><h2 id="Player2" class="nombre">Player 2</h2>
             </div>
         </div>
-    <div class="contenedor_tablero">
-        <div class="col mb-3">
-            <div class="row d-flex justify-content-center">
-                <div class="tablero_container">
-                    <div class="cellDesign" id="numero0"></div>
-                    <div class="cellDesign" id="numero1"></div>
-                    <div class="cellDesign" id="numero2"></div>
-                    <div class="cellDesign" id="numero3"></div>
-                    <div class="cellDesign" id="numero4"></div>
-                    <div class="cellDesign" id="numero5"></div>
-                    <div class="cellDesign" id="numero6"></div>
-                    <div class="cellDesign" id="numero7"></div>
-                    <div class="cellDesign" id="numero8"></div>
+        <div class="contenedor_tablero">
+            <div class="col mb-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="tablero_container">
+                        <div class="cellDesign" id="numero0"></div>
+                        <div class="cellDesign" id="numero1"></div>
+                        <div class="cellDesign" id="numero2"></div>
+                        <div class="cellDesign" id="numero3"></div>
+                        <div class="cellDesign" id="numero4"></div>
+                        <div class="cellDesign" id="numero5"></div>
+                        <div class="cellDesign" id="numero6"></div>
+                        <div class="cellDesign" id="numero7"></div>
+                        <div class="cellDesign" id="numero8"></div>
+                    </div>
                 </div>
+                <span id="color"></span>
+                <audio src="../sound/ddk.mp3" id="audio"></audio>
+                <i class="glyphicon glyphicon-play-circle b-play" id="play" onclick="play()"></i>
             </div>
-            <span id="color"></span>
-            <audio src="../sound/ddk.mp3" id="audio"></audio>
-            <i class="glyphicon glyphicon-play-circle b-play" id="play" onclick="play()"></i>
+        </div>
+        <div class="botones">
+            <div id="btnreiniciar"><a href="javascript:location.reload()" id="actualizarpagina">Limpiar Tablero</a></div>
+            <div id="btnprincipal"><a href="../index.html" id="menuprincipal">Menu principal</a></div>
         </div>
     </div>
-    <div class="botones">
-        <div id="btnreiniciar"><a href="javascript:location.reload()" id="actualizarpagina">Limpiar Tablero</a></div>
-        <div id="btnprincipal"><a href="../index.html" id="menuprincipal">Menu principal</a></div>
-    </div>
-</div>
     <script src="../js/tablerohardcore.js"></script>
 </body>
 </html>

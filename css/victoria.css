@@ -2,18 +2,19 @@
 body {
     background-image: url(../img/fondotablero.png);
 }
+
 .main-container {
     display: flex;
     align-items: center;
     height: 70vh;
     width: 100vw;
-
 }
+
 h1 {
     font-weight: 700;
-    color: red;
-    
+    color: red; 
 }
+
 .foto {
     perspective: 20em;
 }
@@ -22,11 +23,9 @@ h1 {
     width: 70%;
     height: 70%;
     animation: fotowin 10s ease 0s infinite normal forwards;
-
 }
 
 @keyframes fotowin {
-
     10%{
     transform: rotateY(360deg);
     transform-style: preserve-3d;
@@ -36,6 +35,4 @@ h1 {
 p {
     font-size: x-small;
     color: orange;
-
-
 }

@@ -8,6 +8,7 @@ body {
     top: 13em;
     padding: 0px;
 }
+
 #columna {
     align-items: center;
     justify-content: center;
@@ -23,7 +24,6 @@ body {
     padding: 0.2em;
     -webkit-animation: Player1 1.4s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate both;
     animation: Player1 1.4s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate both;
-
 }
 
  @-webkit-keyframes Player1 {
@@ -59,11 +59,6 @@ body {
     }
   }
   
-
-
-
-
-
 #Player2 {
     color: rgb(0, 21, 138);
     font-family:Impact,'Arial Narrow Bold', sans-serif;
