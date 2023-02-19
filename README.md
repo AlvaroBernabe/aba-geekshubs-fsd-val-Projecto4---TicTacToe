@@ -1,6 +1,18 @@
 <h1 align="center">Proyect Tic - Tac - Toe</h1>
 
-<h2> Description: </h2>
+## Menu
+
+- [Description](#description)
+- [My version of the game](#my-version-of-the-game)
+- [Features](#features)
+- [Badges](#badges)
+- [License](#license)
+- [Future development of the game](#future-development-of-the-game)
+- [Known bugs](#known-bugs)
+
+
+
+## Description:
 
 In the bootcamp of GeeksHubs i am tasked to create a version of the game Tic - Tac - Toe.
 I have to make the game fully functional and a few other things:
@@ -10,12 +22,12 @@ I have to make the game fully functional and a few other things:
 - And a last one that shows the winner of the game.
 - The name of the player have to reach the last page and show it.
 
-<h3>My version of the game: </h3>
+## My version of the game:
 
 <p> Initially, I was going to make the game with different themes, the board having different tones that the player can choose from.</p>
 <p> That the player could choose different token to play among other things, but the reality of the matter is that initially I lacked the knowledge to do everything so i opted for something simpler, and I focused on making it fully functional and then later on the graphic part of the game.</p>
 
-<h2> Features: </h2>
+## Features:
 <p> - The game have 2 modes to play, a normal one with the normal board with music when you put the first token and fully responsive for mobile and a few different resolution.</p>
 <p> - And a mode for ........ i really don´t know when, but the music kick-ass. (Warning for loud sound and drastic change of colors).</p>
 <p> - It has a short manual. </p>
@@ -46,10 +58,10 @@ And this is the game in the mobile version:
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> 
   <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
 
-<h2> License </h2>
+## <p style:>License</p>
 MIT-type license, in with anyone is free to take part or all of the code for any purpose regardless of what they are going to do.
 
-<h2> Future development of the game: (if there is a future in were i have time) </h2>
+## Future development of the game:
 <p> - Something that tell the player when it is his or her turn. </p>
 <p> - In the winning screen to show the number of moves made to win the game. </p>
 <p> - Skins for the token and the board itself. </p>
@@ -57,13 +69,12 @@ MIT-type license, in with anyone is free to take part or all of the code for any
 <p> - More responsive >.< </p>
 <p> ETA: Soon T.M. (Valve Time) </p> 
 
-<h2> Known bugs: </h2>
+## Known bugs:
 <p> - The hard mode is not responsive at all.</p>
 <p> - The winning page design is not great on desktop.</p>
 <p> - This is not a bug at all but the name of the project is project 4 and in reality it is the third, i feel bad about it :/ </p>
 
-
-Made with love by Álvaro Bernabé Alonso
+<h4> Made with love by Álvaro Bernabé Alonso </h4>
 
 
 
