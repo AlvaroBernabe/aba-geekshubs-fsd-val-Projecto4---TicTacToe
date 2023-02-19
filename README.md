@@ -31,6 +31,7 @@ I have to make the game fully functional and a few other things:
 <p> - The game have 2 modes to play, a normal one with the normal board with music when you put the first token and fully responsive for mobile and a few different resolution.</p>
 <p> - And a mode for ........ i really don´t know when, but the music kick-ass. (Warning for loud sound and drastic change of colors).</p>
 <p> - It has a short manual. </p>
+<p> - In the CSS of the hard mode, there is a problem in the code but at the same time a feature is created, it gives the board a cool effect made with the conflict of 2 different properties and an important (!) </p>
 <p> - The game have a few cool css features with look awesome</p>
 
 This is the initial game menu vs the final one that I made.
@@ -72,6 +73,7 @@ MIT-type license, in with anyone is free to take part or all of the code for any
 ## Known bugs:
 <p> - The hard mode is not responsive at all.</p>
 <p> - The winning page design is not great on desktop.</p>
+<p> - In the CSS of the hard mode, there is a problem in the code but at the same time a feature is created, it gives the board a cool effect made with the conflict of 2 different properties and an important (!) </p>
 <p> - This is not a bug at all but the name of the project is project 4 and in reality it is the third, i feel bad about it :/ </p>
 
 <h4> Made with love by Álvaro Bernabé Alonso </h4>
