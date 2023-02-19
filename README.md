@@ -38,8 +38,13 @@ And this is the game in the mobile version:
 
 ![mobile](https://user-images.githubusercontent.com/122753448/219978063-9615423f-5e4c-4188-81a8-aa396fbec6d1.gif)
 
-
-It has been fully developed with HTML5, CSS3, Bootstrap 5 and Javascript Vanilla.
+## Badges
+- <p>It has been fully developed with HTML5, CSS3, Bootstrap 5 and Javascript Vanilla.</P>
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> 
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
 
 <h2> License </h2>
 MIT-type license, in with anyone is free to take part or all of the code for any purpose regardless of what they are going to do.
@@ -55,6 +60,7 @@ MIT-type license, in with anyone is free to take part or all of the code for any
 <h2> Known bugs: </h2>
 <p> - The hard mode is not responsive at all.</p>
 <p> - The winning page design is not great on desktop.</p>
+<p> - This is not a bug at all but the name of the project is project 4 and in reality it is the third, i feel bad about it :/ </p>
 
 
 Made with love by Álvaro Bernabé Alonso
