@@ -32,9 +32,6 @@ body {
     animation: cellDesign 3.5s ease 0s normal forwards;
 }
 
-
-
-
 @media(max-width: 1050px) {
     .tablero_container {
         display: grid;
@@ -75,8 +72,6 @@ body {
     }
 }
 
-
-
 @keyframes cellDesign {
 	0% {
 		opacity: 0;
@@ -97,13 +92,11 @@ body {
     display: flex;  
 }
 
-
 .cellDesign:hover {
     scale: 1.05;    
 }
 
 /* Nombres de los jugadores y títulos    */
-
 #Jugador1 {
     color: rgb(138, 2, 138);
     font-family:Impact,'Arial Narrow Bold', sans-serif;
@@ -114,22 +107,6 @@ body {
     font-family:Impact,'Arial Narrow Bold', sans-serif;
     animation: Player1 3s linear 0s  normal forwards;
 }
-/* @keyframes Player1 {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-} */
-
-/* #gamer2 {
-    align-items: center;
-        justify-content: right;
-} */
 
 #Jugador2 {
     color: rgb(0, 21, 138);
@@ -142,20 +119,7 @@ body {
     animation: Player2 3s linear 0s normal forwards;
 }
 
-/* @keyframes Player2 {
-	0% {
-		opacity: 0;
-		transform: translateX(250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-} */
-
     /* Parte de los botones */
-
 .botones {
     display: flex;
     padding: 15px;
@@ -180,13 +144,10 @@ body {
     z-index: 1;
 }
 
-
-
 #btnreiniciar:hover,#btnprincipal:hover {
     box-shadow: 0 3px #adb5bd;
     top: 1px;
 }
-
 
 #btnreiniciar:hover:after,#btnprincipal:hover:after {
     width: 100%;

@@ -51,16 +51,11 @@ body {
 		transform: rotate(0);
 		transform-origin: right;
 	}
-
 	100% {
 		transform: rotate(360deg);
 		transform-origin: right;
 	}
 }
-
-
-
-
 
 #nombrejugadores {
     width: 100%;
@@ -107,7 +102,6 @@ body {
 }
 #numero8 {
     color: rgb(69, 19, 140);
-
 }
 
 /* Nombres de los jugadores y títulos    */
@@ -127,7 +121,6 @@ body {
 		opacity: 0;
 		transform: translateX(-250px);
 	}
-
 	100% {
 		opacity: 1;
 		transform: translateX(0);
@@ -150,7 +143,6 @@ body {
 		opacity: 0;
 		transform: translateX(250px);
 	}
-
 	100% {
 		opacity: 1;
 		transform: translateX(0);
@@ -158,7 +150,6 @@ body {
 }
 
     /* Parte de los botones */
-
 .botones {
     display: flex;
     padding: 15px;
@@ -183,13 +174,10 @@ body {
     z-index: 1;
 }
 
-
-
 #btnreiniciar:hover,#btnprincipal:hover {
     box-shadow: 0 3px #adb5bd;
     top: 1px;
 }
-
 
 #btnreiniciar:hover:after,#btnprincipal:hover:after {
     width: 100%;
