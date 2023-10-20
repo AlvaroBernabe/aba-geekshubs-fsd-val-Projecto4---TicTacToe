@@ -1,35 +1,56 @@
-body{
-    background-image: url(../img/fondotablero.png);
-    background-repeat: no-repeat;
-    border: 0px;
-    padding: 0px;
+body {
+    /* background-image: url(../img/fondotablero.png); */
+    background-color: #2B3964;
+    /* background-size: auto; 
+    background-repeat: repeat; */
+    margin: 0; 
+    padding: 10px;
 }
 
 p {
-    color: rgb(0, 134, 201);
+    color: #F9CC7B;
 }
 
 h1 {
-    color: rgb(5, 0, 98);
+    color: #050062;
+    margin: 0;
 }
 
 h2 {
-    color: rgb(6, 12, 119);
+    color: #3482AA; 
+    margin: 0;
+}
+
+#btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
-    background-color: rgb(202, 122, 68);
-    align-content: center;
-    justify-content: center;
-    height: 2.8em;
-    width: 12em;
-    color: rgb(39, 0, 112);
-    border-radius: 8%;
-    border-color: rgb(196, 0, 186);
+    background-color: #CA7A44;
+    height: 2.5em;
+    width: auto; 
+    color: #270070;
+    border-radius: 8px; 
+    border: none; 
+    padding: 10px 20px; 
 }
 
 .btn:hover {
-    background-color: rgb(202, 82, 2);
+    background-color: #CA5202;
     cursor: pointer;
 }
 
+#fotoTablero {
+    justify-content: center;
+    align-items: center;
+    width: 40%; 
+    height: auto; 
+}
+
+.tableroDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
